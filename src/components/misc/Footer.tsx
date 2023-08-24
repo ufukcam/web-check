@@ -47,8 +47,12 @@ const Footer = (props: { isFixed?: boolean }): JSX.Element => {
   return (
   <StyledFooter style={props.isFixed ? {position: 'fixed'} : {}}>
     <span>
-      N4 Web-Check is
-      n4technology.com © 2023
+      View source at <Link href={githubUrl}>github.com/lissy93/web-check</Link>
+    </span>
+    <span>
+      <Link href="/about">Web-Check</Link> is
+      licensed under <Link href={licenseUrl}>MIT</Link> -
+      © <Link href={authorUrl}>Alicia Sykes</Link> 2023
     </span>
   </StyledFooter>
   );
